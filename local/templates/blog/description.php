@@ -1,8 +1,8 @@
 <?php
 /* описание шаблона, для подключения через админку */
 $arTemplate = array (
-  'NAME' => 'album',
-  'DESCRIPTION' => 'описание_album',
+  'NAME' => 'blog',
+  'DESCRIPTION' => 'описание_blog',
   'SORT' => '',
   'TYPE' => '',
 );

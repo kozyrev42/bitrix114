@@ -12,7 +12,7 @@ $asset = Asset::getInstance();
 /* .min. подключатся автоматически */
 /* $asset->addCss(SITE_TEMPLATE_PATH . "/css/bootstrap.css");
 $asset->addCss(SITE_TEMPLATE_PATH . "/css/product.css"); */
-/* нужно также связать подключенные файлы с телом страницы */
+/* нужно также связать подключенные файлы с телом страницы $APPLICATION->ShowHead() в теге <head>*/
 
 /* подключение JS-файлов */
 $asset->addJs(SITE_TEMPLATE_PATH . "/js/bootstrap.bundle.min.js");
@@ -29,8 +29,10 @@ $asset->addJs(SITE_TEMPLATE_PATH . "/js/bootstrap.bundle.min.js");
    <meta name="generator" content="Hugo 0.104.2">
    <title><?php $APPLICATION->ShowTitle()?></title>
    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/product/">
+
    <!-- подключаем css -->
    <!-- <link href="<?= SITE_TEMPLATE_PATH ?>/css/bootstrap.min.css" rel="stylesheet"> -->
+
    <!-- связываем подключенные стили со страницей -->
    <?php $APPLICATION->ShowHead()?>
 
